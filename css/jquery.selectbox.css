@@ -1,0 +1,42 @@
+div.selectbox-wrapper {
+  background-color:white;
+  margin:0px;
+  padding:0px;
+  text-align:left;
+}
+div.selectbox-wrapper ul {
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+div.selectbox-wrapper ul li.selected {
+  background-color: #EAF2FB;
+}
+div.selectbox-wrapper ul li.current {
+  background-color: #CDD8E4;
+}
+div.selectbox-wrapper ul li {
+  list-style-type:none;
+  display:block;
+  margin:0;
+  padding:2px;
+  cursor:pointer;
+}
+
+label {
+    display: block;
+}
+.selectbox /* look&fell of  select box*/
+{
+  margin: 0px 5px 10px 0px;
+  padding-left:2px;
+  font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+  display : block;
+  text-align:left;
+  cursor: pointer;
+}
+
+/*select {
+	background: url('bg_select.png') right;
+}*/
+
