@@ -173,6 +173,28 @@
   box-shadow: 0 0 0 2px #8db242;
 }
 
+.journal-filters__search {
+  width: 100%;
+  background: var(--journal-surface-container-lowest);
+  border: 1px solid var(--journal-outline);
+  padding: 8px var(--journal-stack-md);
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: var(--journal-radius);
+  color: var(--journal-on-surface);
+  outline: none;
+  transition: box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.journal-filters__search:focus {
+  box-shadow: 0 0 0 2px #8db242;
+}
+
+.journal-filters__search::placeholder {
+  color: var(--journal-on-surface-variant, #6b7280);
+}
+
 /* Feed toolbar */
 .journal-feed__toolbar {
   display: flex;

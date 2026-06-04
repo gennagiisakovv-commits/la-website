@@ -22,6 +22,7 @@
   var $count;
   var $pagination;
   var $period;
+  var $search;
   var $sortBtn;
   var $filters;
 
@@ -59,6 +60,10 @@
     return val === "all" ? null : parseInt(val, 10);
   }
 
+  function getSearchQuery() {
+    return ($search.val() || "").trim().toLowerCase();
+  }
+
   function getItemTypes(item) {
     if (item.types && item.types.length) {
       return item.types;
@@ -83,6 +88,13 @@
     if (year) {
       items = items.filter(function (item) {
         return item.year === year;
+      });
+    }
+
+    var query = getSearchQuery();
+    if (query) {
+      items = items.filter(function (item) {
+        return (item.title || "").toLowerCase().indexOf(query) !== -1;
       });
     }
 
@@ -301,6 +313,7 @@
     $count = $("#journal-count");
     $pagination = $("#journal-pagination");
     $period = $("#journal-period");
+    $search = $("#journal-search");
     $sortBtn = $("#journal-sort");
     $filters = $section.find("[data-journal-filter]");
 
@@ -309,6 +322,11 @@
     });
 
     $period.on("change", function () {
+      state.page = 1;
+      render();
+    });
+
+    $search.on("input", function () {
       state.page = 1;
       render();
     });
