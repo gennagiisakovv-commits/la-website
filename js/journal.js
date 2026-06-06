@@ -7,6 +7,7 @@
     handwriting: "На заметку",
     legal: "К размышлению",
     practice: "Статьи",
+    lawyer: "Для юриста"
   };
 
   var BADGE_VARIANTS = ["primary", "secondary", "tertiary"];
