@@ -72,11 +72,11 @@
   <style type="text/css">
     #example .new { opacity: 0; }
     #example .div_opacity {
-        -webkit-transition: opacity .2s ease-in-out;
-        -moz-transition: opacity .2s ease-in-out;
-        -ms-transition: opacity .2s ease-in-out;
-        -o-transition: opacity .2s ease-in-out;
-        transition: opacity .2s ease-in-out;
+        -webkit-transition: opacity .1s ease-in-out;
+        -moz-transition: opacity .1s ease-in-out;
+        -ms-transition: opacity .1s ease-in-out;
+        -o-transition: opacity .1s ease-in-out;
+        transition: opacity .1s ease-in-out;
         opacity: 1;
     }
     </style>
@@ -92,21 +92,21 @@
   
   /* First image (Logo. Full height) */
   .bgimg-1 {
-    background-image: url("img/parallax1.jpg");
+    background-image: url("img/parallax400.jpg");
     /* min-height: 100%; */
-    min-height: 400px;
+    min-height: 200px;
   }
   
   /* Second image (Portfolio) */
   .bgimg-2 {
-    background-image: url("img/parallax2.jpg");
+    background-image: url("img/parallax2.webp");
     min-height: 300px;
   }
   
   /* Third image (Contact) */
   .bgimg-3 {
-    background-image: url("img/parallax3.jpg");
-    min-height: 600px;
+    background-image: url("img/parallax400.webp");
+    min-height: 300px;
   }
   
   .w3-wide {letter-spacing: 10px;}
@@ -129,7 +129,8 @@
       <!------------------------------Start header --------------------->
       <header class="header">
         <div class="header__container _container">
-          <a href="img/la.webp" class="header__logo">
+          
+          <a href="documentation.html#la" class="header__logo">
             <img id="lighbulb" onclick="changeImage()" src="img/pic_bulboff.gif" width="60" height="70">
           </a>
           <a href="index.html" class="header__logo"> L.Isakova </a>
@@ -189,29 +190,14 @@
             <img src="img/cover_contacts.webp" alt="contacts" />
           </div>
         </div>
+<br>
+<br>
         <!---------------------------finish cover ------------------------->
-
       </main>
-<br>
-<br>
-
-<!-- Modal for full size images on click-->
-      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-          <img id="img01" class="w3-image">
-          <p id="caption" class="w3-opacity w3-large"></p>
-        </div>
-      </div>
       
-      <!-- Third Parallax Image with Portfolio Text --------- Метеорит ----------->
-      <div class="bgimg-3 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle w3-margin-top w3-center">
-          <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Челябинск, 9:20 15.02.2013</b></span></h1>
-        </div>
-      </div>
-      
-      <br>
+<!-- Third Parallax Image with Portfolio Text --------- Метеорит ----------->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+</div>
       
 <!-------------------------------------- start footer ----------------------------------->
 		  <footer class="footer">

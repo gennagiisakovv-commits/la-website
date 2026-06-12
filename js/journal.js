@@ -98,7 +98,7 @@
         return (item.title || "").toLowerCase().indexOf(query) !== -1;
       });
     }
-
+ 
     items.sort(function (a, b) {
       var orderA = a.sortOrder != null ? a.sortOrder : 0;
       var orderB = b.sortOrder != null ? b.sortOrder : 0;

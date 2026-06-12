@@ -87,7 +87,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap"
     rel="stylesheet" />
 
-  <title>grafo74.ru</title>
+  <title>grafo74.ru news-journal</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/journal.css" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
@@ -111,19 +111,16 @@
 
   <!------------------------------------------- Текст по буквам ----------------->
   <style type="text/css">
-    #example .new {
-      opacity: 0;
-    }
-
+    #example .new { opacity: 0; }
     #example .div_opacity {
-      -webkit-transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -ms-transition: opacity .2s ease-in-out;
-      -o-transition: opacity .2s ease-in-out;
-      transition: opacity .2s ease-in-out;
-      opacity: 1;
+        -webkit-transition: opacity .1s ease-in-out;
+        -moz-transition: opacity .1s ease-in-out;
+        -ms-transition: opacity .1s ease-in-out;
+        -o-transition: opacity .1s ease-in-out;
+        transition: opacity .1s ease-in-out;
+        opacity: 1;
     }
-  </style>
+    </style>
   <style>
     /* Create a Parallax Effect */
     .bgimg-1,
@@ -135,24 +132,24 @@
       background-size: cover;
     }
 
-    /* First image (Logo. Full height) */
-    .bgimg-1 {
-      background-image: url("img/parallax_1.webp");
-      /* min-height: 100%; */
-      min-height: 400px;
-    }
-
-    /* Second image (Portfolio) */
-    .bgimg-2 {
-      background-image: url("img/parallax2.webp");
-      min-height: 300px;
-    }
-
-    /* Third image (Contact) */
-    .bgimg-3 {
-      background-image: url("img/parallax_3.webp");
-      min-height: 600px;
-    }
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url("img/parallax400.jpg");
+    /* min-height: 100%; */
+    min-height: 200px;
+  }
+  
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("img/parallax2.webp");
+    min-height: 300px;
+  }
+  
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("img/parallax400.webp");
+    min-height: 300px;
+  }
 
     .w3-wide {
       letter-spacing: 10px;
@@ -178,17 +175,18 @@
 <body>
   <!------------------------------Start wrapper ---------------------->
   <div class="wrapper">
-    <!------------------------------Start header --------------------->
-    <header class="header">
-      <div class="header__container _container">
-        <a href="#" class="header__logo">
-          <img id="lighbulb" onclick="changeImage()" src="img/pic_bulboff.gif" width="60" height="70">
-        </a>
-        <a href="index.html" class="header__logo"> L.Isakova </a>
-        <div class="main-block__buttons">
-          <a href="#bottom" class="main-block__button main-block__button_white">▼</a>
-        </div>
-        <!--------------------------- menu ---------------------->
+      <!------------------------------Start header --------------------->
+      <header class="header">
+        <div class="header__container _container">
+          
+          <a href="index.html#lighbulb" class="header__logo">
+            <img id="lighbulb" onclick="changeImage()" src="img/pic_bulboff.gif" width="60" height="70">
+          </a>
+          <a href="documentation.html#la" class="header__logo"> L.Isakova </a>
+          <div class="main-block__buttons">
+            <a href="#bottom" class="main-block__button main-block__button_white">▼</a>
+          </div>
+          <!--------------------------- menu ---------------------->
         <nav class="header__menu menu">
 
           <div class="topnav" id="myTopnav">
@@ -201,7 +199,7 @@
               </div>
             </div>
             <a href="news0.html">Опыт</a>
-            <a href="" class="active">Юрист</a>
+            <a href="index.html">Юрист</a>
             <a href="graphology.html">Графолог</a>
             <a href="handwriting.html">Почерковед</a>
             <a href="services.html">Услуги</a>
@@ -238,12 +236,6 @@
             <div class="main-block__text" id="example">
               <img src="img/la.webp" alt="Исакова Лариса" style="width:80px;height:80px;margin-left:10px;">
               "Знание о том, как была раньше решена аналогичная задача позволяет решить текущую проблему клиента в производственной сфере, в строительстве и в торговле."
-            </div>
-
-
-            <div class="main-block__buttons">
-              <a href="news0.html" class="main-block__button main-block__button_border">Опыт &nbsp; &nbsp; &nbsp;</a>
-              <a href="#la" class="main-block__button main-block__button_border">Исакова Л.А.</a>
             </div>
 
           </div>
@@ -362,10 +354,8 @@
 
 
   <!-- Third Parallax Image with Portfolio Text --------- Метеорит ----------->
-  <div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
   </div>
-
-  <br>
 
   <!-------------------------------------- start footer ----------------------------------->
   <footer class="footer">

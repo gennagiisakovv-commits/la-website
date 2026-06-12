@@ -71,17 +71,17 @@
 				</style> -->
 			
 		  <!------------------------------------------- Текст по буквам ----------------->
-		  <style type="text/css">
-			#example .new { opacity: 0; }
-			#example .div_opacity {
-				-webkit-transition: opacity .2s ease-in-out;
-				-moz-transition: opacity .2s ease-in-out;
-				-ms-transition: opacity .2s ease-in-out;
-				-o-transition: opacity .2s ease-in-out;
-				transition: opacity .2s ease-in-out;
-				opacity: 1;
-			}
-			</style>
+  <style type="text/css">
+    #example .new { opacity: 0; }
+    #example .div_opacity {
+        -webkit-transition: opacity .1s ease-in-out;
+        -moz-transition: opacity .1s ease-in-out;
+        -ms-transition: opacity .1s ease-in-out;
+        -o-transition: opacity .1s ease-in-out;
+        transition: opacity .1s ease-in-out;
+        opacity: 1;
+    }
+    </style>
 		<style>
 		
 		  /* Create a Parallax Effect */
@@ -92,24 +92,24 @@
 			background-size: cover;
 		  }
 		  
-		  /* First image (Logo. Full height) */
-		  .bgimg-1 {
-			background-image: url("img/parallax1.jpg");
-			/* min-height: 100%; */
-			min-height: 400px;
-		  }
-		  
-		  /* Second image (Portfolio) */
-		  .bgimg-2 {
-			background-image: url("img/parallax2.jpg");
-			min-height: 300px;
-		  }
-		  
-		  /* Third image (Contact) */
-		  .bgimg-3 {
-			background-image: url("img/parallax3.jpg");
-			min-height: 600px;
-		  }
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url("img/parallax400.jpg");
+    /* min-height: 100%; */
+    min-height: 200px;
+  }
+  
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("img/parallax2.webp");
+    min-height: 300px;
+  }
+  
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("img/parallax400.webp");
+    min-height: 300px;
+  }
 		  
 		  .w3-wide {letter-spacing: 10px;}
 		  .w3-hover-opacity {cursor: pointer;}
@@ -128,26 +128,17 @@
 			<body>
 		<!------------------------------Start wrapper ---------------------->
 		<div class="wrapper">
-		  <!------------------------------Start header --------------------->
-		  <header class="header">
-			<div class="header__container _container">
-			  <a href="#" class="header__logo">
-				<img
-				  id="lighbulb"
-				  onclick="changeImage()"
-				  src="img/pic_bulboff.gif"
-				  width="60"
-				  height="70"
-				/>
-			  </a>
-			  <a href="index.html" class="header__logo"> L.Isakova </a>
-			  <div class="main-block__buttons">
-				<a
-				  href="#bottom"
-				  class="main-block__button main-block__button_white"
-				  >▼</a
-				>
-			  </div>
+      <!------------------------------Start header --------------------->
+      <header class="header">
+        <div class="header__container _container">
+          
+          <a href="index.html#lighbulb" class="header__logo">
+            <img id="lighbulb" onclick="changeImage()" src="img/pic_bulboff.gif" width="60" height="70">
+          </a>
+          <a href="documentation.html#la" class="header__logo"> L.Isakova </a>
+          <div class="main-block__buttons">
+            <a href="#bottom" class="main-block__button main-block__button_white">▼</a>
+          </div>
           <!--------------------------- menu ---------------------->
           <nav class="header__menu menu">
             <div class="main-block__buttons">
@@ -176,17 +167,23 @@
 									<div class="main-block__subtitle">Пример работы юриста
 									</div>
 										<div class="main-block__text">
-											<p><span class="bigred">против фальсификации доказательств другой стороной по делу № А76-7823-2021</span></p>
+											<p><span class="bigred">против фальсификации доказательств истцом по делу № А76-7823-2021</span></p>
 											<br>
-											<p>В последнее время часто сталкиваемся с фальсификацией доказательств другой стороны, ложными пояснениями. Это, скорее всего, связано с тем, что достаточно сложно добиться внимания суда к таким фактам. Суды, зачастую, стараются этого не замечать. По крайней мере, все чаще сталкиваемся именно с такой реакцией суда на заявления о фальсификации.</p>
+											<img src="img/la.webp" alt="Исакова Лариса" style="width:60px;height:60px;margin-left:10px;">
+              Исакова Лариса:
+            </div>
+											
+            <div class="main-block__text" id="example">
+                <img src="img/la.webp" alt="Исакова Лариса" style="width:80px;height:80px;margin-left:10px;">
+											<p>В последнее время часто сталкиваемся с фальсификацией доказательств другой стороной, а также ложными объяснениями. Это, скорее всего, связано с тем, что достаточно сложно добиться внимания суда к таким негативным фактам. Суды, зачастую, стараются путем отказа в удовлетворении заявления, фальсифицированные доказательства не исследовать. Устно мотивируя это тем, что сторона защищает свои интересы. По крайней мере, мы часто сталкиваемся именно с такой реакцией суда на поданные нами заявления о фальсификации. Однако после неопровержимых доказательств и на основании постановления апелляционной инстанции суд вынужден решить дело в пользу правомерной стороны.</p>
 										</div>
-								</div>
-						  	</div>
-
-									<div class="main-block__image _ibg">
-										<img src="img/news/work.webp" alt="work">
-									</div>
-					</div>
+             
+            </div>
+          </div>
+          <div class="main-block__image _ibg">
+            <img src="img/cover_news_la.webp" alt="cover" style="width:100%;height:80%;">
+          </div>
+        </div>
 					<br>
 					<br>
 					<!-- Modal for full size images on click-->
@@ -213,10 +210,14 @@
 						<div class="Rules__body">
 							<div class="items__item">
 								<div class="items__text">
+									<h3 class="header-block__sub-title"><center><span class="bigred">Как вы думаете, легко ли в суде доказать факт безналичной оплаты?</center></span></h3>
+
+													<div class="item-Rules__icon"><center><img src="img/svg/circles_red.svg" width="60" height="60" alt="circles_red"></center></div>
+													<br>
 									
 									<div class="items__item">
 										<div class="main-block__text">
-											<p>Как вы думаете, легко ли в суде доказать факт безналичной оплаты? К примеру, Вы оплатили один миллион рублей по договору подряда (так и было в реальном примере). У вас есть платежное поручение, один миллион рублей с вашего расчетного счета сняли. Вы подаете платежное поручение в арбитражный суд в качестве доказательства, что оплата по договору прошла (заказчик по договору, ответчик). В свою очередь, вторая сторона (исполнитель по договору подряда, истец) неожиданно заявляет, что этот один миллион рублей она не получила.</p>
+											<p>Например, Вы оплатили один миллион рублей по договору подряда (так и было в реальном примере). У вас есть платежное поручение, один миллион рублей с вашего расчетного счета сняли. Вы подаете платежное поручение в арбитражный суд в качестве доказательства, что оплата по договору прошла (заказчик по договору, ответчик). В свою очередь, вторая сторона (исполнитель по договору подряда, истец) неожиданно заявляет, что этот один миллион рублей она не получила.</p>
 											<p>Суд начинает разбираться в ситуации с оплатой, просит больше подтверждений.</p>
 											<p>Каждая сторона, исполняя определение суда, принесла в суд полученные со своих банков выписки. Но в выписках у заказчика есть оплата миллиона рублей, а у исполнителя нет поступления этого миллиона.</p>
 											<p>Дело в том, что этот платеж ответчик сделал с другого счета, специального, открытого для кредитных операций. Ответчик обращал суды на это внимание. Однако в трех инстанциях арбитражного суда и в Верховном суде РФ все было тщетно!</p>
@@ -270,7 +271,11 @@
 											<p>При этом 18 арбитражный апелляционный суд в постановлении от 20.03.2023 отметил «... предоставление истцом в материалы настоящего дела при его рассмотрении по существу заведомо недостоверных сведений об отсутствии поступления на его расчетный счет произведенного ответчиком платежа в размере 1 миллиона рублей, что следует квалифицировать как вновь открывшееся обстоятельство, которое существовало, но не было известно ответчику на момент принятия судом решения, но которое является существенным для надлежащего рассмотрения дела».</p>
 					
 											<h3 class="header-block__sub-title"><center><span class="bigred">Результат 2х этапов проведенной работы.</center></span></h3>
-											<p>27.03.2023 Арбитражный суд Челябинской области приступил к повторному рассмотрению иска по делу № А76-7823-2021, то есть приступил к пересмотру решения по вновь открывшимся обстоятельствам.</p>
+											<p>27.03.2023 Арбитражный суд Челябинской области приступил к повторному рассмотрению иска по делу № А76-7823-2021.</p>
+											<p>22.08.2023 суд отменил предыдущее решение по вновь открывшимся обстоятельствам.</p>
+											<p>08.11.2024 суд решением кроме признания за ответчиком 1 мллиона рублей отказал истцу в удовлетворении исковых требований в полном объеме на гораздо большую сумму: 2,7 миллиона рублей.</p>
+											<p>Решение устояло в апелляционной и кассационной инстанции арбитражного суда</p>
+											<p>Таким образом фальсификация истцом доказательств сработала для него в обратную сторону.</p>
 								</div>
 							</div>
 						</div>
@@ -290,14 +295,12 @@
 			  </div>
 			</div>
 			
-			<!-- Third Parallax Image with Portfolio Text --------- Метеорит ----------->
-			<div class="bgimg-3 w3-display-container w3-opacity-min">
-			  <div class="w3-display-middle w3-margin-top w3-center">
-				<h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Челябинск, 9:20 15.02.2013</b></span></h1>
-			  </div>
-			</div>
-			
-			<br>
+<!-- Third Parallax Image with Portfolio Text --------- Метеорит ----------->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white">Метеорит, 15.02.2013, Челябинск</span></h1>
+  </div>
+</div>
 			
 <!-------------------------------------- start footer ----------------------------------->
 					<footer class="footer">

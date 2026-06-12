@@ -44,17 +44,17 @@
 				</style> -->
 			
 		  <!------------------------------------------- Текст по буквам ----------------->
-		  <style type="text/css">
-			#example .new { opacity: 0; }
-			#example .div_opacity {
-				-webkit-transition: opacity .2s ease-in-out;
-				-moz-transition: opacity .2s ease-in-out;
-				-ms-transition: opacity .2s ease-in-out;
-				-o-transition: opacity .2s ease-in-out;
-				transition: opacity .2s ease-in-out;
-				opacity: 1;
-			}
-			</style>
+  <style type="text/css">
+    #example .new { opacity: 0; }
+    #example .div_opacity {
+        -webkit-transition: opacity .1s ease-in-out;
+        -moz-transition: opacity .1s ease-in-out;
+        -ms-transition: opacity .1s ease-in-out;
+        -o-transition: opacity .1s ease-in-out;
+        transition: opacity .1s ease-in-out;
+        opacity: 1;
+    }
+    </style>
 		<style>
 		
 		  /* Create a Parallax Effect */
@@ -65,24 +65,24 @@
 			background-size: cover;
 		  }
 		  
-		  /* First image (Logo. Full height) */
-		  .bgimg-1 {
-			background-image: url("img/parallax1.jpg");
-			/* min-height: 100%; */
-			min-height: 400px;
-		  }
-		  
-		  /* Second image (Portfolio) */
-		  .bgimg-2 {
-			background-image: url("img/parallax2.jpg");
-			min-height: 300px;
-		  }
-		  
-		  /* Third image (Contact) */
-		  .bgimg-3 {
-			background-image: url("img/parallax3.jpg");
-			min-height: 600px;
-		  }
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url("img/parallax400.jpg");
+    /* min-height: 100%; */
+    min-height: 200px;
+  }
+  
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("img/parallax2.webp");
+    min-height: 300px;
+  }
+  
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("img/parallax400.webp");
+    min-height: 300px;
+  }
 		  
 		  .w3-wide {letter-spacing: 10px;}
 		  .w3-hover-opacity {cursor: pointer;}
@@ -101,17 +101,18 @@
 			<body>
 <!------------------------------Start wrapper ---------------------->
 <div class="wrapper">
-	<!------------------------------Start header --------------------->
-	<header class="header">
-	  <div class="header__container _container">
-		<a href="#" class="header__logo">
-		  <img id="lighbulb" onclick="changeImage()" src="img/pic_bulboff.gif" width="60" height="70">
-		</a>
-		<a href="index.html" class="header__logo"> L.Isakova </a>
-		<div class="main-block__buttons">
-			<a href="#bottom" class="main-block__button main-block__button_white">▼</a>
-		</div>
-<!--------------------------- menu ---------------------->
+      <!------------------------------Start header --------------------->
+      <header class="header">
+        <div class="header__container _container" id="la">
+          
+          <a href="index.html#lighbulb" class="header__logo">
+            <img id="lighbulb" onclick="changeImage()" src="img/pic_bulboff.gif" width="60" height="70">
+          </a>
+          <a href="#la" class="header__logo"> L.Isakova </a>
+          <div class="main-block__buttons">
+            <a href="#bottom" class="main-block__button main-block__button_white">▼</a>
+          </div>
+          <!--------------------------- menu ---------------------->
 		  <nav class="header__menu menu">
                 <div class="topnav" id="myTopnav">
 			    <a href="news0.html">Опыт</a>
@@ -119,7 +120,7 @@
 				<a href="graphology.html">Графолог</a>
 				<a href="handwriting.html">Почерковед</a>
 				<a href="services.html">Услуги</a>
-				<a href="" class="active">Документы</a>
+				<a href="#doc" class="active">Документы</a>
 				<a href="rules.html">Правила</a>
 				<a href="contacts.html">Контакты</a>
 				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -132,37 +133,92 @@
 		</nav>
 	  </header>
 						<!---------------------------finish header ---------------------->
-
-				<!---------------------------Start Введение--------------------->
-			<main class="page">
-				<div class="page__main-block main-block">
-					<div class="main-block__container _container">
-						<div class="main-block__body">
-							<h1 class="main-block__title">Документы</h1>
-							<h2 class="main-block__subtitle">Правовые основания деятельности:</h2>
-							<div class="main-block__text" id="example">
-								<p>Дипломы и сертификаты:</p>
-								<p>1) преподавателя;</p>
-								<p>2) графолога;</p>
-								<p>3) эксперта-почерковеда;</p>
-								<p>4) эксперта-документалиста;</p>
-								<p>5) юриста.</p>
-							</div>
-							<div class="main-block__buttons">
-								<a href="https://dzen.ru/id/5f3379ecd29b7820ca736741" class="main-block__button main-block__button_border">Дзен</a>
-								<a href="https://www.youtube.com/channel/UC00yB3zaHb1XQrj37Jrp6ew" class="main-block__button main-block__button_border">Видео</a>
-							</div>
-						</div>
-					</div>
-					<div class="main-block__image _ibg">
+		              <!---------------------------Start page Введение----------------->
+      <main class="page">
+        <div class="page__main-block main-block">
+          <div class="main-block__container _container">
+            <div class="main-block__body">
+              
+              <div class="main-block__title">О деятельности Исаковой Л.А.</div>
+              <!-------------------Start subtitle----------------->
+              
+                 <div class="main-block__text">
+                <img src="img/la.webp" alt="Исакова Лариса" style="width:60px;height:60px;margin-left:10px;">
+              Исакова Лариса:
+            </div>
+            <div class="main-block__text" id="example">
+                <img src="img/la.webp" alt="Исакова Лариса" style="width:80px;height:80px;margin-left:10px;">
+                "Оказываю юридическое сопровождение деятельности предпринимателей и юридических лиц на любой стадии - от создания до прекращения их деятельности (ликвидации). Имею многолетний практический опыт в работе: от программиста до главного бухгалтера, от финансового директора до директора юридической организации, что даёт мне возможность глубоко исследовать поставленную перед ними задачу и решить совокупность всех проблем клиента в производственной сфере, в строительстве и в торговле."
+              </div>
+              
+            </div>
+          </div>
+			
+          <div class="main-block__image _ibg">
 						<img src="img/cover_docum.webp" alt="docum" style="width:100%;height:80%;">
-					</div>
-				</div>
+			</div>
+        </div>
+            <!---------------------------finish cover ------------------------->  
 
-				<!---------------------------Start practice -----Возможности графологии ...---->
+        <!------- categories - -----Краткие сведения об авторе-------------->
+        <section class="page__categories categories">
+          	<div class="categories__container">
+                  <div class="categories__header header-block">
+                    <br>
+                  </div>
+
+        <div class="item__item">
+                    <div class="item__image">
+                        <img src="img/index/index_la2.webp" alt="LA">
+                    </div>
+            <div class="item__body">
+            
+              <div class="item__label">Сведения о деятельности Исаковой (Isakova) Ларисы Анатольевны, юрист, эксперт-почерковед, эксперт-документалист, графолог:              
+                </div>
+                  <div class="header-block__text">
+                    <p> <img src="img/documents/9_Дипл_Робот.webp" alt="Дипл_Робот" style="width:28px;height:40px;margin-left:10px;">
+                    - В 1991 году окончила ЧПИ по специальности «Робототехнические системы» с присвоением квалификации "Инженера-электротехника"; </p>
+					<p> - С 1991 по 1996 работала по полученной специальности, в том числе программистом, ведущим программистом; </p>  
+					<p> - С 1996 по 1999 она работала заместителем руководителя по юридическим и экономическим вопросам; </p>    
+					<p> <img src="img/documents/8_Дипл_Юрист.webp" alt="Дипл_Юрист" style="width:28px;height:40px;margin-left:10px;">
+                      - В 1999 окончила ЧелГУ по специальности «юриспруденция»; </p>  
+					<p> - С 1999 продолжила работу в должностях заместителя генерального директора Челябинского завода технологической оснастки по юридическим и экономическим вопросам; </p>  
+					<p> - С 2003 работала в должности заместителя генерального директора Челябинского завода технологической оснастки по финансовым вопросам, начальником службы экономической безопасности; </p>  
+					<p> - С 2005 работала в должности финансового директора Челябинского завода технологической оснастки; </p>  
+					<p> - С 2007 по 2022 работала в должности директора юридической фирмы ООО УПО «ГРИН»; </p>   
+					<p> <img src="img/documents/6_Дипл_Граф.webp" alt="Дипл_Граф" style="width:28px;height:40px;margin-left:10px;">
+                    <img src="img/documents/7_Сертиф_Препод.webp" alt="Сертиф_Препод" style="width:28px;height:40px;margin-left:10px;">
+                      - С 2012 по 2014 получила графологическое образование в Институте Графоанализа (Израиль); </p>
+                      <p> - В 2014 получила диплом, подтверждающий прохождение трех курсов Института Графоанализа; </p>
+                      <p> <img src="img/List_min.webp" alt="List" style="width:28px;height:28px;margin-left:10px;">
+                      - С 2014 по 2022 углубленно изучала графологию по зарубежным и
+                      Российским источникам, практиковала работу с людьми, активно
+                      собирала базу данных почерков лиц разных возрастов, разных
+                      языковых и социальных групп; </p>
+                      <p> <img src="img/documents/1-0_Дипл_Почерк.webp" alt="Дипл_Почерк" style="width:28px;height:40px;margin-left:10px;">
+                      - В 2016 получила квалификацию почерковеда и выдает заключения специалиста и эксперта-почерковеда; </p>
+                      <p> - В 2019 получила сертификат, подтверждающий успешное окончание преподавательских курсов Института Графоанализа; </p>
+                      <p> <img src="img/documents/2-0_Дипл_Псих.webp" alt="Дипл_Псих" style="width:28px;height:40px;margin-left:10px;">
+                      - В 2021 прошла обучение в ЮуРГУ и получила диплом психолога;</p>
+                      <p> - Знания графологии, психологии очень помогают, так как принадлежность письменного документа тому или иному лицу лучше оценивается с точки зрения психологических особенностей; </p>
+                      <p> - Преподает курс Графологического анализа в Челябинском институте психоанализа; </p>
+				      <p> - Как эксперт-почерковед исследует почерковые объекты по договорам с заказчиками, а также по определениям Верховного Суда, арбитражного и гражданского суда; </p>
+ 					  <p> - В настоящее время кроме экспертной деятельности активно занимается юридической деятельностью по договорам с индивидуальными предпринимателями и юридическими лицами. </p>
+                  </div>
+            </div>
+        </div>
+				      <br>
+				      <br>
+              </div>
+  </div>
+		<!-- Third Parallax Image with Portfolio Text -------------------->
+		<div class="bgimg-2 w3-display-container w3-opacity-min">
+		</div>
+		
+				<!---------------------------Start practice --------->
 				<section class="page__practice practice">
 					<div class="practice__container _container">
-						<div class="practice__header header-block">
+						<div class="practice__header header-block" id="doc">
 							
 			
 					<!-- ------------------------ Дакументы --------------- -->
@@ -170,7 +226,7 @@
 					<h2 class="categories__title title">Документы <span>об образовании</span></h2>
 		
 					<div class="header-block__sub-title">
-						Исаковой (Isakova) Ларисы Анатольевны - психолог, преподаватель графологии, графолог, эксперт-почерковед, эксперт-документалист, юрист.
+						Исаковой (Isakova) Ларисы Анатольевны - юрист, эксперт-почерковед, эксперт-документалист, графолог
 					</div>
 					</div>	
 					<br>
@@ -332,15 +388,12 @@
 		  </div>
 		</div>
 		
-		<!-- Third Parallax Image with Portfolio Text --------- Метеорит ----------->
-		<div class="bgimg-3 w3-display-container w3-opacity-min">
-		  <div class="w3-display-middle w3-margin-top w3-center">
-			<h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Челябинск, 9:20 15.02.2013</b></span></h1>
-		  </div>
-		</div>
-		
-		<br>
-		
+<!-- Third Parallax Image with Portfolio Text --------- Метеорит ----------->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white">Метеорит, 15.02.2013, Челябинск</span></h1>
+  </div>
+</div>
 <!-------------------------------------- start footer ----------------------------------->
 		<footer class="footer">
   <div class="footer__top">
