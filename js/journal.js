@@ -65,6 +65,14 @@
     return ($search.val() || "").trim().toLowerCase();
   }
 
+  function getItemSearchText(item) {
+    var text = item.excerpt || "";
+    if (!text && item.excerptHtml) {
+      text = String(item.excerptHtml).replace(/<[^>]+>/g, " ");
+    }
+    return ((item.title || "") + " " + text).toLowerCase();
+  }
+
   function getItemTypes(item) {
     if (item.types && item.types.length) {
       return item.types;
@@ -95,7 +103,7 @@
     var query = getSearchQuery();
     if (query) {
       items = items.filter(function (item) {
-        return (item.title || "").toLowerCase().indexOf(query) !== -1;
+        return getItemSearchText(item).indexOf(query) !== -1;
       });
     }
  
